@@ -36,7 +36,7 @@ func (s SendEmails) Description() string {
 }
 
 func (s SendEmails) Handle(c inter.Cli) inter.ExitCode {
-	mailer := c.App().Make(support.DripEmailer{}).(support.DripEmailer)
+	mailer := support.DripEmailer{}
 	mailer.Send(s.Email)
 
 	return inter.Success
