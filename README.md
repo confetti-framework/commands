@@ -4,7 +4,7 @@
 
 # Confetti Commands
 
-Use this code for your CLI project. Particularly suitable for a CI project.
+Use this template for your CLI project. Particularly suitable for a CI project.
 
 > This code contains a few files to get started on your CLI project. If you want more functionalities, it is better to use [Confetti Framework](https://github.com/confetti-framework/confetti).
 
