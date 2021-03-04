@@ -1,4 +1,4 @@
-# CLI
+# Confetti Commands
 
 Use this code for your CLI project. Particularly suitable for a CI project.
 
@@ -10,8 +10,7 @@ Use this code for your CLI project. Particularly suitable for a CI project.
 
 ## Documentation
 
-Confetti CLI has extensive and thorough [documentation](https://www.confetti-framework.com/docs/digging-deeper/commands)
-, making it a breeze to get started.
+Confetti Confetti has extensive and thorough [documentation](https://www.confetti-framework.com/docs/digging-deeper/commands), making it a breeze to get started.
 
 ## License
 
