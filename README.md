@@ -18,7 +18,7 @@ Confetti Commands has extensive and thorough [documentation](https://www.confett
 package commands
 
 import (
-	"confetti-framework/app/support"
+	"src/app/support"
 	"github.com/confetti-framework/contract/inter"
 	"io"
 )
