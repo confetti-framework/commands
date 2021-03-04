@@ -24,7 +24,7 @@ import (
 )
 
 type SendEmails struct {
-	Email string `flag:"email"`
+	Email string `flag:"email" description:"The subject of the mail" required:"true"`
 }
 
 func (s SendEmails) Name() string {
