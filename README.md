@@ -4,13 +4,46 @@
 
 # Confetti Commands
 
-Use this code for your CLI project. Particularly suitable for a CI project.
+Use this template for your CLI project. Particularly suitable for a CI project.
 
 > This code contains a few files to get started on your CLI project. If you want more functionalities, it is better to use [Confetti Framework](https://github.com/confetti-framework/confetti).
 
 ## Documentation
 
 Confetti Commands has extensive and thorough [documentation](https://www.confetti-framework.com/docs/digging-deeper/commands), making it a breeze to get started.
+
+## Example
+
+``` go
+package commands
+
+import (
+	"src/app/support"
+	"github.com/confetti-framework/contract/inter"
+	"io"
+)
+
+type SendEmails struct {
+	Email string `flag:"email" required:"true"`
+}
+
+func (s SendEmails) Name() string {
+	return "mail:send"
+}
+
+func (s SendEmails) Description() string {
+	return "Send a marketing email to a user."
+}
+
+func (s SendEmails) Handle(c inter.Cli) inter.ExitCode {
+	mailer := support.DripEmailer{}
+	mailer.Send(s.Email)
+
+	c.Info("Email send to: %s", s.Email)
+
+	return inter.Success
+}
+```
 
 ## License
 
