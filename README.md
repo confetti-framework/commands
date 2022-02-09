@@ -10,7 +10,7 @@ Use this template for your CLI project. Particularly suitable for a CI project.
 
 ## Documentation
 
-Confetti Commands has extensive and thorough [documentation](https://www.confetti-framework.com/docs/digging-deeper/commands), making it a breeze to get started.
+Confetti Commands has extensive and thorough [documentation](https://confetti-framework.github.io/docs/digging-deeper/commands), making it a breeze to get started.
 
 ## Example
 
