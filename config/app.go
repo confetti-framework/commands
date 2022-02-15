@@ -46,7 +46,7 @@ var App = struct {
 		| will not be safe. Please do this before deploying an application!
 		|
 	*/
-	Key: env.Str("APP_KEY"),
+	Key: env.StringOr("APP_KEY", ""),
 
 	/*
 		|--------------------------------------------------------------------------
