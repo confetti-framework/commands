@@ -1,10 +1,10 @@
 package bootstrap
 
 import (
-	"github.com/confetti-framework/contract/inter"
-	"github.com/confetti-framework/foundation"
+	"github.com/confetti-framework/framework/foundation"
+	"github.com/confetti-framework/framework/inter"
 	"src/app/console"
-	decorator2 "src/bootstrap/decorator"
+	"src/bootstrap/decorator"
 )
 
 var bootContainer inter.Container
@@ -22,7 +22,7 @@ func init() {
 		|
 	*/
 
-	bootContainer = decorator2.Bootstrap(foundation.NewContainer())
+	bootContainer = decorator.Bootstrap(foundation.NewContainer())
 }
 
 func NewAppFromBoot() inter.App {

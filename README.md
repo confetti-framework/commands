@@ -18,8 +18,8 @@ Confetti Commands has extensive and thorough [documentation](https://confetti-fr
 package commands
 
 import (
-	"src/app/support"
-	"github.com/confetti-framework/contract/inter"
+	"src/app/mail_driver"
+	"github.com/confetti-framework/framework/inter"
 	"io"
 )
 
@@ -36,7 +36,7 @@ func (s SendEmails) Description() string {
 }
 
 func (s SendEmails) Handle(c inter.Cli) inter.ExitCode {
-	mailer := support.DripEmailer{}
+	mailer := mail_driver.DripEmailer{}
 	mailer.Send(s.Email)
 
 	c.Info("Email send to: %s", s.Email)

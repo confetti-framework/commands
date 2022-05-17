@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/confetti-framework/contract/inter"
+	"github.com/confetti-framework/framework/inter"
 )
 
 type ExampleCommand struct {

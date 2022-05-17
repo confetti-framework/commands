@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/confetti-framework/contract/inter"
+	"github.com/confetti-framework/framework/inter"
 	"os"
-	bootstrap2 "src/bootstrap"
+	"src/bootstrap"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 	   |
 	   |
 	*/
-	app := bootstrap2.NewAppFromBoot()
+	app := bootstrap.NewAppFromBoot()
 
 	/*
 	   |--------------------------------------------------------------------------
